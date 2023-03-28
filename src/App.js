@@ -87,9 +87,10 @@ class App extends React.Component {
                                style={{backgroundColor: this.state.bgColor}}>
                                 <i className="fab fa-twitter"></i>
                             </a>
-                           <a className="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank"
+                            <a className="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank"
                                rel="noreferrer"
-                               href={{"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + this.state.text} style={{backgroundColor: this.state.bgColor}}>
+                               href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${this.state.author}&content=${this.state.text}`}
+                               style={{backgroundColor: this.state.bgColor}}>
                                 <i className="fab fa-tumblr"></i>
                             </a>
                             <button className="button" id="new-quote" style={{backgroundColor: this.state.bgColor}}
